@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import { useRef, ReactNode } from "react";
 
 interface AnimatedSectionProps {
@@ -10,13 +10,13 @@ interface AnimatedSectionProps {
     stagger?: boolean;
 }
 
-const fadeUpVariants = {
-    hidden: {
-        opacity: 0,
-        y: 24
+const fadeUpVariants: Variants = {
+    hidden: { 
+        opacity: 0, 
+        y: 24 
     },
-    visible: {
-        opacity: 1,
+    visible: { 
+        opacity: 1, 
         y: 0,
         transition: {
             duration: 0.8,
@@ -25,7 +25,7 @@ const fadeUpVariants = {
     }
 };
 
-const staggerContainerVariants = {
+const staggerContainerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -36,13 +36,13 @@ const staggerContainerVariants = {
     }
 };
 
-const staggerChildVariants = {
-    hidden: {
-        opacity: 0,
-        y: 20
+const staggerChildVariants: Variants = {
+    hidden: { 
+        opacity: 0, 
+        y: 20 
     },
-    visible: {
-        opacity: 1,
+    visible: { 
+        opacity: 1, 
         y: 0,
         transition: {
             duration: 0.6,
