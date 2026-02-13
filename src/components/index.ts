@@ -7,5 +7,8 @@ export { SystemLayers } from './SystemLayers';
 export { Trust } from './Trust';
 export { Capabilities } from './Capabilities';
 export { Industries } from './Industries';
+export { Manifesto } from './Manifesto';
+export { TechnicalSpecs } from './TechnicalSpecs';
+export { Education } from './Education';
 export { Finale } from './Finale';
 export { Footer } from './Footer';
