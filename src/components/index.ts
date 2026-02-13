@@ -5,5 +5,7 @@ export { Hero } from './Hero';
 export { Philosophy } from './Philosophy';
 export { SystemLayers } from './SystemLayers';
 export { Trust } from './Trust';
+export { Capabilities } from './Capabilities';
+export { Industries } from './Industries';
 export { Finale } from './Finale';
 export { Footer } from './Footer';

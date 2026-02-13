@@ -4,6 +4,8 @@ import {
   Hero,
   Philosophy,
   SystemLayers,
+  Capabilities,
+  Industries,
   Trust,
   Finale,
   Footer,
@@ -19,6 +21,8 @@ export default function Home() {
         <Hero />
         <Philosophy />
         <SystemLayers />
+        <Capabilities />
+        <Industries />
         <Trust />
         <Finale />
       </main>
