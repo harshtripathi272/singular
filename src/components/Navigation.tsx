@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -15,9 +16,9 @@ export function Navigation() {
     }, [scrollY]);
 
     const navLinks = [
-        { label: "Philosophy", href: "#philosophy" },
-        { label: "Architecture", href: "#architecture" },
-        { label: "Trust", href: "#trust" },
+        { label: "Philosophy", href: "/philosophy" },
+        { label: "Architecture", href: "/architecture" },
+        { label: "Trust", href: "/trust" },
     ];
 
     return (
@@ -34,13 +35,13 @@ export function Navigation() {
 
                 <div className="nav-links">
                     {navLinks.map((link) => (
-                        <a
+                        <Link
                             key={link.href}
                             href={link.href}
                             className="nav-link"
                         >
                             {link.label}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 
